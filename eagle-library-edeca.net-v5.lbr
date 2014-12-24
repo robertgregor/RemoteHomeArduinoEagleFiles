@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1199,11 +1199,10 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <wire x1="-6.35" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
 <wire x1="6.35" y1="1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
-<pad name="1" x="-5.08" y="0.127" drill="1.016" rot="R90"/>
-<pad name="2" x="-2.54" y="-0.127" drill="1.016" rot="R90"/>
-<pad name="3" x="0" y="0.127" drill="1.016" rot="R90"/>
-<pad name="4" x="2.54" y="-0.127" drill="1.016" rot="R90"/>
-<pad name="5" x="5.08" y="0.127" drill="1.016" rot="R90"/>
+<pad name="1" x="-5.061359375" y="-0.269240625" drill="1.016" rot="R90"/>
+<pad name="3" x="0" y="0.240209375" drill="1.016" rot="R90"/>
+<pad name="4" x="2.54" y="-0.240209375" drill="1.016" rot="R90"/>
+<pad name="5" x="5.098640625" y="0.240209375" drill="1.016" rot="R90"/>
 </package>
 <package name="PINHD1X04-SQUARE">
 <wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
@@ -2829,7 +2828,6 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <text x="-3.81" y="8.255" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="0" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="0" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
@@ -3913,19 +3911,6 @@ http://pdfserv.maxim-ic.com/en/ds/DS1337-DS1337C.pdf</description>
 <device name="SQUARE" package="PINHD1X05-SQUARE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="PINHD1X05">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
