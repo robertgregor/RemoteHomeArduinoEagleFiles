@@ -71,6 +71,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -153,10 +154,10 @@
 <wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
 </symbol>
 </symbols>
@@ -14212,6 +14213,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
 </symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -15370,10 +15373,10 @@ nominal inductance, magnetically screened</description>
 <library name="RemoteHome">
 <packages>
 <package name="AVRHEADER">
-<pad name="MOSI" x="0" y="0" drill="0.5"/>
-<pad name="VPP" x="-1.27" y="0.071928125" drill="0.5"/>
-<pad name="MISO" x="1.27" y="0.070190625" drill="0.5"/>
-<pad name="CLK" x="2.54" y="0" drill="0.5"/>
+<pad name="MOSI" x="0" y="0" drill="0.6" diameter="0.8128"/>
+<pad name="VPP" x="-1.27" y="0.09926875" drill="0.6" diameter="0.8128"/>
+<pad name="MISO" x="1.27" y="0.09069375" drill="0.6" diameter="0.8128"/>
+<pad name="CLK" x="2.54" y="0" drill="0.6" diameter="0.8128"/>
 </package>
 <package name="RFM69W">
 <circle x="-3.928" y="-3.468" radius="2.83980625" width="0.127" layer="21"/>
@@ -15397,17 +15400,17 @@ nominal inductance, magnetically screened</description>
 </package>
 <package name="ESP03">
 <wire x1="-8.23" y1="-5" x2="6.754009375" y2="-5.03229375" width="0.127" layer="51"/>
-<wire x1="6.721759375" y1="6" x2="-8.23" y2="6" width="0.127" layer="51"/>
-<text x="5.019" y="4.202" size="1.5" layer="51" ratio="15">+</text>
+<wire x1="6.721759375" y1="4.73" x2="-8.23" y2="4.73" width="0.127" layer="51"/>
+<text x="5.019" y="2.932" size="1.5" layer="51" ratio="15">+</text>
 <smd name="WIFI_GND" x="-6.73" y="-6" dx="2" dy="1.27" layer="1" rot="R90"/>
 <smd name="WIFI_TX" x="-2.73" y="-6" dx="2" dy="1.27" layer="1" rot="R90"/>
 <smd name="WIFI_RX" x="-0.73" y="-6" dx="2" dy="1.27" layer="1" rot="R90"/>
 <smd name="WIFI_EN" x="3.27" y="-6" dx="2" dy="1.27" layer="1" rot="R90"/>
-<smd name="WIFI_VDD" x="5.27" y="7" dx="2" dy="1.27" layer="1" rot="R90"/>
-<smd name="WIFI_GPIO15" x="-2.73" y="7" dx="2" dy="1.27" layer="1" rot="R90"/>
+<smd name="WIFI_VDD" x="5.27" y="5.73" dx="2" dy="1.27" layer="1" rot="R90"/>
+<smd name="WIFI_GPIO15" x="-2.73" y="5.73" dx="2" dy="1.27" layer="1" rot="R90"/>
 <text x="-4" y="1" size="1.27" layer="51">ESP-03</text>
-<wire x1="-8.2582625" y1="-4.967709375" x2="-8.2582625" y2="6.032290625" width="0.127" layer="51"/>
-<wire x1="6.7417375" y1="-4.967709375" x2="6.7417375" y2="6.032290625" width="0.127" layer="51"/>
+<wire x1="-8.2582625" y1="-4.967709375" x2="-8.2582625" y2="4.762290625" width="0.127" layer="51"/>
+<wire x1="6.7417375" y1="-4.967709375" x2="6.7417375" y2="4.762290625" width="0.127" layer="51"/>
 <text x="6.6111375" y="-1.25944375" size="1.27" layer="51" rot="R90">ANT</text>
 </package>
 </packages>
